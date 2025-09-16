@@ -1,0 +1,21 @@
+package tutorial1;
+
+import java.util.Scanner;
+
+public class WordPrinter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a sentence: ");
+        String sentence = input.nextLine();
+
+        String[] words = sentence.split(" ");
+
+        System.out.println("Words in the sentence:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+        input.close();
+    }
+}
